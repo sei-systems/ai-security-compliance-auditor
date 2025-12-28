@@ -25,3 +25,4 @@
 2023-10-27 00:23:15 service_account login success from IP 10.0.0.12
 2023-10-27 00:24:57 sensitive_file_access: 'customers.db' accessed by guest_account
 2023-10-27 00:25:30 firewall_alert: Rule 405 (Deny All) modified by service_account to Allow 0.0.0.0/0
+2023-10-27 00:25:30 firewall_alert: Rule 405 (Deny All) modified by service_account to Allow 0.0.0.0/0
