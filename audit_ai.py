@@ -17,17 +17,22 @@ TASK: Map logs to the MOST RELEVANT controls from the following audit library:
 - SYSTEM INTEGRITY: SOC2 CC7.1, NIST SI-4 (Information System Monitoring)
 - INCIDENT RESPONSE: SOC2 CC7.3, NIST IR-4 (Incident Handling)
 
---- OUTPUT FORMAT RULES ---
-1. Use the LIST format ONLY.
-2. Format each finding exactly as follows:
+OUTPUT FORMAT RULES:
+1. Use the LIST format ONLY. No tables.
+2. Follow this exact template for every finding:
 
-Control ID: [Pick the most relevant IDs from the Library above]
+Control ID: [ID]
 Event: [Title]
 Details: [Analysis]
-Remediation: [Fix steps]
+Remediation: [Fix]
 
-(New line between findings)
-3. Categorize by ### HIGH, ### MEDIUM, and ### LOW.
+(Ensure there is exactly one empty line between findings)
+
+EXAMPLE:
+Control ID: SOC2 CC6.1 / NIST AC-2
+Event: Unauthorized sudo attempt
+Details: User 'webapp' tried to access /etc/shadow.
+Remediation: Remove sudo privileges for service accounts.
 """
 
 # Configure API Key
