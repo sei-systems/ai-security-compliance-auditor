@@ -21,12 +21,11 @@ CORE REQUIREMENTS:
 4. Provide a "Remediation" column for any identified risks.
 
 OUTPUT RULES:
-1. ONLY use the following Table format for ALL risk levels (High, Medium, Low).
-2. Do NOT use bullet points for findings.
-3. Every table MUST have these exact 5 columns:
-   | Risk Level | Control ID | Event Summary | Analysis | Remediation |
-4. If a section has no findings, write "No findings identified for this category."
-5. Do NOT repeat sections.
+1. Every section (Summary, High, Medium, Low) MUST be a Markdown table.
+2. Use exactly these headers for every table: 
+   | ID | Event | Control Mapping | Severity | Remediation |
+3. Do not use nested bullets inside table cells; use semicolon-separated sentences.
+4. If a severity level has no logs, the table should contain one row: | N/A | No issues found | N/A | N/A | N/A |
 """
 
 # Configure API Key
