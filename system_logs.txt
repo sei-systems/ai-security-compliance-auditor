@@ -1,0 +1,27 @@
+2023-10-27 00:00:00 service_account login failure from IP 192.168.1.50
+2023-10-27 00:00:30 sensitive_file_access: 'customers.db' accessed by backup_user
+2023-10-27 00:01:31 firewall_alert: Rule 405 (Deny All) modified by admin_user to Allow 0.0.0.0/0
+2023-10-27 00:02:36 firewall_alert: Rule 305 (Deny All) modified by sys_admin to Allow 0.0.0.0/0
+2023-10-27 00:03:26 firewall_alert: Rule 405 (Deny All) modified by guest_account to Allow 0.0.0.0/0
+2023-10-27 00:04:21 firewall_alert: Rule 405 (Deny All) modified by backup_user to Allow 0.0.0.0/0
+2023-10-27 00:04:34 sensitive_file_access: 'payroll_2023.csv' accessed by guest_account
+2023-10-27 00:05:53 service_account login failure from IP 192.168.1.10
+2023-10-27 00:06:34 firewall_alert: Rule 305 (Deny All) modified by guest_account to Allow 0.0.0.0/0
+2023-10-27 00:08:32 sensitive_file_access: 'payroll_2023.csv' accessed by service_account
+2023-10-27 00:08:37 firewall_alert: Rule 305 (Deny All) modified by guest_account to Allow 0.0.0.0/0
+2023-10-27 00:10:24 sensitive_file_access: 'config.yaml' accessed by guest_account
+2023-10-27 00:10:42 sensitive_file_access: 'secrets.env' accessed by service_account
+2023-10-27 00:11:38 sys_admin login failure from IP 192.168.1.25
+2023-10-27 00:13:35 sensitive_file_access: 'payroll_2023.csv' accessed by backup_user
+2023-10-27 00:15:13 sensitive_file_access: 'config.yaml' accessed by backup_user
+2023-10-27 00:17:10 firewall_alert: Rule 205 (Deny All) modified by guest_account to Allow 0.0.0.0/0
+2023-10-27 00:18:19 sensitive_file_access: 'payroll_2023.csv' accessed by admin_user
+2023-10-27 00:19:01 firewall_alert: Rule 305 (Deny All) modified by backup_user to Allow 0.0.0.0/0
+2023-10-27 00:19:24 guest_account login failure from IP 192.168.1.10
+2023-10-27 00:20:18 backup_user login failure from IP 172.16.0.5
+2023-10-27 00:21:31 firewall_alert: Rule 502 (Deny All) modified by service_account to Allow 0.0.0.0/0
+2023-10-27 00:21:48 service_account login success from IP 192.168.1.10
+2023-10-27 00:22:45 firewall_alert: Rule 405 (Deny All) modified by backup_user to Allow 0.0.0.0/0
+2023-10-27 00:23:15 service_account login success from IP 10.0.0.12
+2023-10-27 00:24:57 sensitive_file_access: 'customers.db' accessed by guest_account
+2023-10-27 00:25:30 firewall_alert: Rule 405 (Deny All) modified by service_account to Allow 0.0.0.0/0
