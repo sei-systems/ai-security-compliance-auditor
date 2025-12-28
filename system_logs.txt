@@ -1,27 +1,500 @@
-2023-10-27 00:00:00 service_account login failure from IP 192.168.1.50
-2023-10-27 00:00:30 sensitive_file_access: 'customers.db' accessed by backup_user
-2023-10-27 00:01:31 firewall_alert: Rule 405 (Deny All) modified by admin_user to Allow 0.0.0.0/0
-2023-10-27 00:02:36 firewall_alert: Rule 305 (Deny All) modified by sys_admin to Allow 0.0.0.0/0
-2023-10-27 00:03:26 firewall_alert: Rule 405 (Deny All) modified by guest_account to Allow 0.0.0.0/0
-2023-10-27 00:04:21 firewall_alert: Rule 405 (Deny All) modified by backup_user to Allow 0.0.0.0/0
-2023-10-27 00:04:34 sensitive_file_access: 'payroll_2023.csv' accessed by guest_account
-2023-10-27 00:05:53 service_account login failure from IP 192.168.1.10
-2023-10-27 00:06:34 firewall_alert: Rule 305 (Deny All) modified by guest_account to Allow 0.0.0.0/0
-2023-10-27 00:08:32 sensitive_file_access: 'payroll_2023.csv' accessed by service_account
-2023-10-27 00:08:37 firewall_alert: Rule 305 (Deny All) modified by guest_account to Allow 0.0.0.0/0
-2023-10-27 00:10:24 sensitive_file_access: 'config.yaml' accessed by guest_account
-2023-10-27 00:10:42 sensitive_file_access: 'secrets.env' accessed by service_account
-2023-10-27 00:11:38 sys_admin login failure from IP 192.168.1.25
-2023-10-27 00:13:35 sensitive_file_access: 'payroll_2023.csv' accessed by backup_user
-2023-10-27 00:15:13 sensitive_file_access: 'config.yaml' accessed by backup_user
-2023-10-27 00:17:10 firewall_alert: Rule 205 (Deny All) modified by guest_account to Allow 0.0.0.0/0
-2023-10-27 00:18:19 sensitive_file_access: 'payroll_2023.csv' accessed by admin_user
-2023-10-27 00:19:01 firewall_alert: Rule 305 (Deny All) modified by backup_user to Allow 0.0.0.0/0
-2023-10-27 00:19:24 guest_account login failure from IP 192.168.1.10
-2023-10-27 00:20:18 backup_user login failure from IP 172.16.0.5
-2023-10-27 00:21:31 firewall_alert: Rule 502 (Deny All) modified by service_account to Allow 0.0.0.0/0
-2023-10-27 00:21:48 service_account login success from IP 192.168.1.10
-2023-10-27 00:22:45 firewall_alert: Rule 405 (Deny All) modified by backup_user to Allow 0.0.0.0/0
-2023-10-27 00:23:15 service_account login success from IP 10.0.0.12
-2023-10-27 00:24:57 sensitive_file_access: 'customers.db' accessed by guest_account
-2023-10-27 00:25:30 firewall_alert: Rule 405 (Deny All) modified by service_account to Allow 0.0.0.0/0
+[2025-12-27 09:06:49] INFO: System health check - CPU 27% Memory 35%
+[2025-12-27 09:09:41] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 09:12:33] INFO: System health check - CPU 16% Memory 31%
+[2025-12-27 09:15:25] INFO: Outbound connection established to 45.33.22.11:443 [Data: 710MB]
+[2025-12-27 09:18:17] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-27 09:21:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 09:24:01] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 09:26:53] INFO: System health check - CPU 40% Memory 32%
+[2025-12-27 09:29:45] INFO: User 'webapp' logged in from 10.0.0.5.
+[2025-12-27 09:32:37] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-27 09:35:29] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 09:38:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 09:41:13] INFO: System health check - CPU 36% Memory 59%
+[2025-12-27 09:44:05] INFO: User 'webapp' logged in from 192.168.1.50.
+[2025-12-27 09:46:57] CRITICAL: Unauthorized sudo attempt by 'admin' on /etc/shadow!
+[2025-12-27 09:49:49] INFO: User 'db_user' logged in from 10.0.0.5.
+[2025-12-27 09:52:41] INFO: System health check - CPU 37% Memory 49%
+[2025-12-27 09:55:33] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-27 09:58:25] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 10:01:17] INFO: System health check - CPU 30% Memory 31%
+[2025-12-27 10:04:09] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 10:07:01] INFO: System health check - CPU 7% Memory 35%
+[2025-12-27 10:09:53] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 10:12:45] INFO: System health check - CPU 20% Memory 21%
+[2025-12-27 10:15:37] INFO: System health check - CPU 22% Memory 20%
+[2025-12-27 10:18:29] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 10:21:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 10:24:13] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 10:27:05] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 10:29:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 10:32:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 10:35:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 10:38:33] INFO: User 'admin' logged in from 172.16.254.1.
+[2025-12-27 10:41:25] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 10:44:17] INFO: System health check - CPU 39% Memory 31%
+[2025-12-27 10:47:09] INFO: User 'webapp' logged in from 10.0.0.5.
+[2025-12-27 10:50:01] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 10:52:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 10:55:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 10:58:37] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-27 11:01:29] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 11:04:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 11:07:13] INFO: System health check - CPU 15% Memory 51%
+[2025-12-27 11:10:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 11:12:57] INFO: System health check - CPU 40% Memory 20%
+[2025-12-27 11:15:49] INFO: System health check - CPU 34% Memory 51%
+[2025-12-27 11:18:41] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 11:21:33] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-27 11:24:25] INFO: System health check - CPU 28% Memory 37%
+[2025-12-27 11:27:17] INFO: System health check - CPU 25% Memory 60%
+[2025-12-27 11:30:09] INFO: System health check - CPU 27% Memory 25%
+[2025-12-27 11:33:01] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-27 11:35:53] INFO: System health check - CPU 28% Memory 21%
+[2025-12-27 11:38:45] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-27 11:41:37] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-27 11:44:29] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 11:47:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 11:50:13] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-27 11:53:05] CRITICAL: Unauthorized sudo attempt by 'webapp' on /etc/shadow!
+[2025-12-27 11:55:57] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 11:58:49] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-27 12:01:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 12:04:33] INFO: System health check - CPU 28% Memory 41%
+[2025-12-27 12:07:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 12:10:17] INFO: System health check - CPU 19% Memory 35%
+[2025-12-27 12:13:09] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 12:16:01] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-27 12:18:53] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-27 12:21:45] ERROR: Failed login attempt for user 'webapp' from 172.16.254.1.
+[2025-12-27 12:24:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 12:27:29] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 12:30:21] INFO: User 'db_user' logged in from 10.0.0.5.
+[2025-12-27 12:33:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 12:36:05] CRITICAL: Unauthorized sudo attempt by 'admin' on /etc/shadow!
+[2025-12-27 12:38:57] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-27 12:41:49] INFO: System health check - CPU 32% Memory 33%
+[2025-12-27 12:44:41] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 12:47:33] INFO: System health check - CPU 23% Memory 59%
+[2025-12-27 12:50:25] INFO: System health check - CPU 15% Memory 33%
+[2025-12-27 12:53:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 12:56:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 12:59:01] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 13:01:53] INFO: System health check - CPU 14% Memory 56%
+[2025-12-27 13:04:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 13:07:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 13:10:29] INFO: System health check - CPU 16% Memory 43%
+[2025-12-27 13:13:21] INFO: System health check - CPU 34% Memory 60%
+[2025-12-27 13:16:13] CRITICAL: Unauthorized sudo attempt by 'db_user' on /etc/shadow!
+[2025-12-27 13:19:05] ERROR: Failed login attempt for user 'root' from 185.220.101.5.
+[2025-12-27 13:21:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 13:24:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 13:27:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 13:30:33] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 13:33:25] CRITICAL: Unauthorized sudo attempt by 'admin' on /etc/shadow!
+[2025-12-27 13:36:17] INFO: System health check - CPU 23% Memory 26%
+[2025-12-27 13:39:09] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 13:42:01] INFO: System health check - CPU 38% Memory 22%
+[2025-12-27 13:44:53] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 13:47:45] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-27 13:50:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 13:53:29] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 13:56:21] INFO: System health check - CPU 37% Memory 27%
+[2025-12-27 13:59:13] INFO: System health check - CPU 11% Memory 44%
+[2025-12-27 14:02:05] INFO: Outbound connection established to 45.33.22.11:443 [Data: 729MB]
+[2025-12-27 14:04:57] INFO: System health check - CPU 30% Memory 49%
+[2025-12-27 14:07:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:10:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:13:33] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:16:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:19:17] ERROR: Failed login attempt for user 'admin' from 185.220.101.5.
+[2025-12-27 14:22:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:25:01] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-27 14:27:53] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-27 14:30:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:33:37] INFO: User 'webapp' logged in from 172.16.254.1.
+[2025-12-27 14:36:29] INFO: System health check - CPU 17% Memory 32%
+[2025-12-27 14:39:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:42:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:45:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:47:57] INFO: System health check - CPU 37% Memory 22%
+[2025-12-27 14:50:49] ERROR: Failed login attempt for user 'jdoe' from 185.220.101.5.
+[2025-12-27 14:53:41] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 14:56:33] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 14:59:25] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-27 15:02:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:05:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:08:01] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:10:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:13:45] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-27 15:16:37] INFO: System health check - CPU 40% Memory 24%
+[2025-12-27 15:19:29] INFO: System health check - CPU 27% Memory 44%
+[2025-12-27 15:22:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:25:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:28:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:30:57] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-27 15:33:49] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-27 15:36:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:39:33] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-27 15:42:25] INFO: System health check - CPU 8% Memory 25%
+[2025-12-27 15:45:17] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-27 15:48:09] INFO: System health check - CPU 35% Memory 52%
+[2025-12-27 15:51:01] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:53:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 15:56:45] INFO: System health check - CPU 20% Memory 49%
+[2025-12-27 15:59:37] INFO: System health check - CPU 19% Memory 28%
+[2025-12-27 16:02:29] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 16:05:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:08:13] INFO: System health check - CPU 19% Memory 47%
+[2025-12-27 16:11:05] INFO: System health check - CPU 38% Memory 26%
+[2025-12-27 16:13:57] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-27 16:16:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:19:41] INFO: System health check - CPU 22% Memory 50%
+[2025-12-27 16:22:33] INFO: System health check - CPU 10% Memory 35%
+[2025-12-27 16:25:25] INFO: System health check - CPU 37% Memory 44%
+[2025-12-27 16:28:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:31:09] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-27 16:34:01] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 16:36:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:39:45] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 16:42:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:45:29] INFO: System health check - CPU 5% Memory 29%
+[2025-12-27 16:48:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:51:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:54:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 16:56:57] INFO: User 'webapp' logged in from 192.168.1.50.
+[2025-12-27 16:59:49] INFO: System health check - CPU 25% Memory 40%
+[2025-12-27 17:02:41] INFO: System health check - CPU 34% Memory 37%
+[2025-12-27 17:05:33] INFO: System health check - CPU 24% Memory 48%
+[2025-12-27 17:08:25] INFO: System health check - CPU 8% Memory 37%
+[2025-12-27 17:11:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 17:14:09] INFO: System health check - CPU 37% Memory 36%
+[2025-12-27 17:17:01] ERROR: Failed login attempt for user 'jdoe' from 185.220.101.5.
+[2025-12-27 17:19:53] INFO: User 'webapp' logged in from 10.0.0.5.
+[2025-12-27 17:22:45] INFO: System health check - CPU 37% Memory 48%
+[2025-12-27 17:25:37] INFO: System health check - CPU 37% Memory 58%
+[2025-12-27 17:28:29] INFO: System health check - CPU 22% Memory 44%
+[2025-12-27 17:31:21] INFO: System health check - CPU 21% Memory 55%
+[2025-12-27 17:34:13] INFO: User 'admin' logged in from 172.16.254.1.
+[2025-12-27 17:37:05] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 17:39:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 17:42:49] INFO: System health check - CPU 18% Memory 52%
+[2025-12-27 17:45:41] INFO: System health check - CPU 7% Memory 27%
+[2025-12-27 17:48:33] INFO: System health check - CPU 39% Memory 29%
+[2025-12-27 17:51:25] INFO: System health check - CPU 14% Memory 28%
+[2025-12-27 17:54:17] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 17:57:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 18:00:01] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-27 18:02:53] INFO: System health check - CPU 7% Memory 28%
+[2025-12-27 18:05:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 18:08:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 18:11:29] INFO: System health check - CPU 31% Memory 25%
+[2025-12-27 18:14:21] INFO: System health check - CPU 8% Memory 56%
+[2025-12-27 18:17:13] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 18:20:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 18:22:57] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-27 18:25:49] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-27 18:28:41] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 18:31:33] INFO: System health check - CPU 27% Memory 24%
+[2025-12-27 18:34:25] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-27 18:37:17] INFO: System health check - CPU 11% Memory 50%
+[2025-12-27 18:40:09] INFO: System health check - CPU 28% Memory 59%
+[2025-12-27 18:43:01] ERROR: Failed login attempt for user 'admin' from 185.220.101.5.
+[2025-12-27 18:45:53] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-27 18:48:45] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-27 18:51:37] INFO: System health check - CPU 33% Memory 60%
+[2025-12-27 18:54:29] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 18:57:21] INFO: System health check - CPU 36% Memory 32%
+[2025-12-27 19:00:13] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 19:03:05] CRITICAL: Unauthorized sudo attempt by 'root' on /etc/shadow!
+[2025-12-27 19:05:57] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-27 19:08:49] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 19:11:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 19:14:33] INFO: System health check - CPU 12% Memory 40%
+[2025-12-27 19:17:25] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-27 19:20:17] CRITICAL: Unauthorized sudo attempt by 'admin' on /etc/shadow!
+[2025-12-27 19:23:09] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-27 19:26:01] INFO: System health check - CPU 10% Memory 22%
+[2025-12-27 19:28:53] ERROR: Failed login attempt for user 'admin' from 45.33.22.11.
+[2025-12-27 19:31:45] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 19:34:37] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-27 19:37:29] INFO: System health check - CPU 27% Memory 34%
+[2025-12-27 19:40:21] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 19:43:13] INFO: User 'webapp' logged in from 10.0.0.5.
+[2025-12-27 19:46:05] INFO: System health check - CPU 16% Memory 36%
+[2025-12-27 19:48:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 19:51:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 19:54:41] INFO: Outbound connection established to 185.220.101.5:443 [Data: 1725MB]
+[2025-12-27 19:57:33] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 20:00:25] INFO: System health check - CPU 8% Memory 50%
+[2025-12-27 20:03:17] INFO: System health check - CPU 38% Memory 21%
+[2025-12-27 20:06:09] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 20:09:01] INFO: System health check - CPU 28% Memory 57%
+[2025-12-27 20:11:53] INFO: System health check - CPU 21% Memory 53%
+[2025-12-27 20:14:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 20:17:37] CRITICAL: Unauthorized sudo attempt by 'root' on /etc/shadow!
+[2025-12-27 20:20:29] ERROR: Failed login attempt for user 'root' from 45.33.22.11.
+[2025-12-27 20:23:21] INFO: System health check - CPU 30% Memory 42%
+[2025-12-27 20:26:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 20:29:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 20:31:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 20:34:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 20:37:41] INFO: System health check - CPU 14% Memory 27%
+[2025-12-27 20:40:33] INFO: System health check - CPU 33% Memory 40%
+[2025-12-27 20:43:25] CRITICAL: Unauthorized sudo attempt by 'jdoe' on /etc/shadow!
+[2025-12-27 20:46:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 20:49:09] INFO: System health check - CPU 13% Memory 34%
+[2025-12-27 20:52:01] INFO: User 'webapp' logged in from 172.16.254.1.
+[2025-12-27 20:54:53] INFO: System health check - CPU 11% Memory 52%
+[2025-12-27 20:57:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 21:00:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 21:03:29] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 21:06:21] INFO: System health check - CPU 9% Memory 49%
+[2025-12-27 21:09:13] INFO: Outbound connection established to 45.33.22.11:443 [Data: 1282MB]
+[2025-12-27 21:12:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 21:14:57] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-27 21:17:49] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 21:20:41] INFO: System health check - CPU 17% Memory 32%
+[2025-12-27 21:23:33] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 21:26:25] WARN: Low disk space on /var/log (85% full).
+[2025-12-27 21:29:17] INFO: System health check - CPU 34% Memory 48%
+[2025-12-27 21:32:09] INFO: User 'webapp' logged in from 192.168.1.50.
+[2025-12-27 21:35:01] INFO: System health check - CPU 12% Memory 60%
+[2025-12-27 21:37:53] INFO: System health check - CPU 18% Memory 22%
+[2025-12-27 21:40:45] ERROR: Connection timeout from database_cluster_01.
+[2025-12-27 21:43:37] INFO: System health check - CPU 38% Memory 29%
+[2025-12-27 21:46:29] CRITICAL: Unauthorized sudo attempt by 'jdoe' on /etc/shadow!
+[2025-12-27 21:49:21] ERROR: Failed login attempt for user 'db_user' from 185.220.101.5.
+[2025-12-27 21:52:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 21:55:05] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-27 21:57:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 22:00:49] INFO: System health check - CPU 37% Memory 27%
+[2025-12-27 22:03:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 22:06:33] INFO: System health check - CPU 18% Memory 35%
+[2025-12-27 22:09:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 22:12:17] CRITICAL: Unauthorized sudo attempt by 'admin' on /etc/shadow!
+[2025-12-27 22:15:09] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-27 22:18:01] INFO: System health check - CPU 18% Memory 25%
+[2025-12-27 22:20:53] ERROR: Failed login attempt for user 'root' from 185.220.101.5.
+[2025-12-27 22:23:45] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-27 22:26:37] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-27 22:29:29] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 22:32:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 22:35:13] INFO: System health check - CPU 26% Memory 33%
+[2025-12-27 22:38:05] CRITICAL: Unauthorized sudo attempt by 'root' on /etc/shadow!
+[2025-12-27 22:40:57] INFO: Outbound connection established to 185.220.101.5:443 [Data: 1556MB]
+[2025-12-27 22:43:49] INFO: System health check - CPU 12% Memory 49%
+[2025-12-27 22:46:41] INFO: System health check - CPU 20% Memory 20%
+[2025-12-27 22:49:33] ERROR: Failed login attempt for user 'admin' from 192.168.1.50.
+[2025-12-27 22:52:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 22:55:17] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-27 22:58:09] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-27 23:01:01] INFO: System health check - CPU 14% Memory 50%
+[2025-12-27 23:03:53] INFO: User 'webapp' logged in from 172.16.254.1.
+[2025-12-27 23:06:45] CRITICAL: Unauthorized sudo attempt by 'admin' on /etc/shadow!
+[2025-12-27 23:09:37] INFO: Outbound connection established to 185.220.101.5:443 [Data: 1008MB]
+[2025-12-27 23:12:29] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-27 23:15:21] INFO: System health check - CPU 29% Memory 31%
+[2025-12-27 23:18:13] INFO: System health check - CPU 37% Memory 43%
+[2025-12-27 23:21:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 23:23:57] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-27 23:26:49] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-27 23:29:41] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-27 23:32:33] INFO: User 'admin' logged in from 172.16.254.1.
+[2025-12-27 23:35:25] INFO: Outbound connection established to 45.33.22.11:443 [Data: 1788MB]
+[2025-12-27 23:38:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 23:41:09] INFO: System health check - CPU 30% Memory 35%
+[2025-12-27 23:44:01] INFO: User 'admin' logged in from 172.16.254.1.
+[2025-12-27 23:46:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-27 23:49:45] ERROR: Failed login attempt for user 'admin' from 185.220.101.5.
+[2025-12-27 23:52:37] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-27 23:55:29] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-27 23:58:21] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-28 00:01:13] WARN: Low disk space on /var/log (85% full).
+[2025-12-28 00:04:05] INFO: System health check - CPU 33% Memory 21%
+[2025-12-28 00:06:57] WARN: Low disk space on /var/log (85% full).
+[2025-12-28 00:09:49] INFO: System health check - CPU 25% Memory 30%
+[2025-12-28 00:12:41] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-28 00:15:33] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-28 00:18:25] INFO: System health check - CPU 6% Memory 50%
+[2025-12-28 00:21:17] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-28 00:24:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 00:27:01] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 00:29:53] INFO: System health check - CPU 6% Memory 42%
+[2025-12-28 00:32:45] INFO: User 'webapp' logged in from 172.16.254.1.
+[2025-12-28 00:35:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 00:38:29] INFO: User 'db_user' logged in from 192.168.1.50.
+[2025-12-28 00:41:21] ERROR: Connection timeout from database_cluster_01.
+[2025-12-28 00:44:13] INFO: System health check - CPU 27% Memory 30%
+[2025-12-28 00:47:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 00:49:57] INFO: Outbound connection established to 185.220.101.5:443 [Data: 743MB]
+[2025-12-28 00:52:49] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-28 00:55:41] INFO: System health check - CPU 6% Memory 33%
+[2025-12-28 00:58:33] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-28 01:01:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:04:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:07:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:10:01] INFO: User 'db_user' logged in from 10.0.0.5.
+[2025-12-28 01:12:53] INFO: System health check - CPU 13% Memory 33%
+[2025-12-28 01:15:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:18:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:21:29] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:24:21] ERROR: Failed login attempt for user 'webapp' from 45.33.22.11.
+[2025-12-28 01:27:13] INFO: System health check - CPU 36% Memory 59%
+[2025-12-28 01:30:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:32:57] INFO: System health check - CPU 10% Memory 58%
+[2025-12-28 01:35:49] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-28 01:38:41] INFO: System health check - CPU 36% Memory 51%
+[2025-12-28 01:41:33] INFO: User 'webapp' logged in from 192.168.1.50.
+[2025-12-28 01:44:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:47:17] INFO: System health check - CPU 36% Memory 52%
+[2025-12-28 01:50:09] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 01:53:01] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-28 01:55:53] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-28 01:58:45] INFO: User 'jdoe' logged in from 172.16.254.1.
+[2025-12-28 02:01:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:04:29] INFO: System health check - CPU 12% Memory 41%
+[2025-12-28 02:07:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:10:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:13:05] INFO: System health check - CPU 15% Memory 54%
+[2025-12-28 02:15:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:18:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:21:41] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-28 02:24:33] WARN: Low disk space on /var/log (85% full).
+[2025-12-28 02:27:25] INFO: System health check - CPU 30% Memory 47%
+[2025-12-28 02:30:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:33:09] WARN: Low disk space on /var/log (85% full).
+[2025-12-28 02:36:01] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:38:53] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-28 02:41:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:44:37] INFO: System health check - CPU 28% Memory 28%
+[2025-12-28 02:47:29] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-28 02:50:21] INFO: User 'webapp' logged in from 192.168.1.50.
+[2025-12-28 02:53:13] ERROR: Connection timeout from database_cluster_01.
+[2025-12-28 02:56:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 02:58:57] INFO: User 'webapp' logged in from 192.168.1.50.
+[2025-12-28 03:01:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:04:41] INFO: System health check - CPU 19% Memory 54%
+[2025-12-28 03:07:33] CRITICAL: Unauthorized sudo attempt by 'root' on /etc/shadow!
+[2025-12-28 03:10:25] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-28 03:13:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:16:09] INFO: System health check - CPU 40% Memory 50%
+[2025-12-28 03:19:01] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:21:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:24:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:27:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:30:29] INFO: System health check - CPU 5% Memory 55%
+[2025-12-28 03:33:21] INFO: System health check - CPU 9% Memory 35%
+[2025-12-28 03:36:13] INFO: User 'admin' logged in from 172.16.254.1.
+[2025-12-28 03:39:05] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-28 03:41:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:44:49] CRITICAL: Unauthorized sudo attempt by 'db_user' on /etc/shadow!
+[2025-12-28 03:47:41] INFO: System health check - CPU 6% Memory 32%
+[2025-12-28 03:50:33] INFO: System health check - CPU 30% Memory 30%
+[2025-12-28 03:53:25] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-28 03:56:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 03:59:09] CRITICAL: Unauthorized sudo attempt by 'db_user' on /etc/shadow!
+[2025-12-28 04:02:01] INFO: System health check - CPU 31% Memory 49%
+[2025-12-28 04:04:53] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-28 04:07:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 04:10:37] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 04:13:29] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-28 04:16:21] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-28 04:19:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 04:22:05] CRITICAL: Unauthorized sudo attempt by 'root' on /etc/shadow!
+[2025-12-28 04:24:57] INFO: User 'jdoe' logged in from 10.0.0.5.
+[2025-12-28 04:27:49] INFO: System health check - CPU 40% Memory 51%
+[2025-12-28 04:30:41] CRITICAL: Unauthorized sudo attempt by 'db_user' on /etc/shadow!
+[2025-12-28 04:33:33] INFO: User 'admin' logged in from 172.16.254.1.
+[2025-12-28 04:36:25] INFO: System health check - CPU 14% Memory 57%
+[2025-12-28 04:39:17] INFO: System health check - CPU 33% Memory 21%
+[2025-12-28 04:42:09] INFO: System health check - CPU 7% Memory 59%
+[2025-12-28 04:45:01] INFO: User 'jdoe' logged in from 192.168.1.10.
+[2025-12-28 04:47:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 04:50:45] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-28 04:53:37] INFO: System health check - CPU 22% Memory 38%
+[2025-12-28 04:56:29] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 04:59:21] INFO: User 'admin' logged in from 192.168.1.50.
+[2025-12-28 05:02:13] INFO: Outbound connection established to 185.220.101.5:443 [Data: 1983MB]
+[2025-12-28 05:05:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 05:07:57] INFO: System health check - CPU 20% Memory 54%
+[2025-12-28 05:10:49] INFO: System health check - CPU 18% Memory 20%
+[2025-12-28 05:13:41] INFO: System health check - CPU 20% Memory 44%
+[2025-12-28 05:16:33] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 05:19:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 05:22:17] ERROR: Failed login attempt for user 'db_user' from 185.220.101.5.
+[2025-12-28 05:25:09] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-28 05:28:01] INFO: System health check - CPU 25% Memory 27%
+[2025-12-28 05:30:53] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-28 05:33:45] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-28 05:36:37] INFO: System health check - CPU 10% Memory 39%
+[2025-12-28 05:39:29] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-28 05:42:21] INFO: System health check - CPU 25% Memory 36%
+[2025-12-28 05:45:13] CRITICAL: Unauthorized sudo attempt by 'jdoe' on /etc/shadow!
+[2025-12-28 05:48:05] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-28 05:50:57] INFO: User 'jdoe' logged in from 192.168.1.50.
+[2025-12-28 05:53:49] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-28 05:56:41] INFO: User 'db_user' logged in from 10.0.0.5.
+[2025-12-28 05:59:33] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-28 06:02:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:05:17] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:08:09] INFO: System health check - CPU 28% Memory 40%
+[2025-12-28 06:11:01] INFO: System health check - CPU 15% Memory 38%
+[2025-12-28 06:13:53] WARN: Low disk space on /var/log (85% full).
+[2025-12-28 06:16:45] INFO: System health check - CPU 31% Memory 48%
+[2025-12-28 06:19:37] INFO: User 'db_user' logged in from 10.0.0.5.
+[2025-12-28 06:22:29] ERROR: Connection timeout from database_cluster_01.
+[2025-12-28 06:25:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:28:13] INFO: System health check - CPU 28% Memory 37%
+[2025-12-28 06:31:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:33:57] INFO: System health check - CPU 38% Memory 52%
+[2025-12-28 06:36:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:39:41] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:42:33] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:45:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 06:48:17] ERROR: Connection timeout from database_cluster_01.
+[2025-12-28 06:51:09] INFO: System health check - CPU 28% Memory 38%
+[2025-12-28 06:54:01] INFO: System health check - CPU 30% Memory 46%
+[2025-12-28 06:56:53] INFO: System health check - CPU 29% Memory 59%
+[2025-12-28 06:59:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 07:02:37] INFO: System health check - CPU 30% Memory 20%
+[2025-12-28 07:05:29] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 07:08:21] INFO: User 'webapp' logged in from 192.168.1.10.
+[2025-12-28 07:11:13] INFO: System health check - CPU 11% Memory 35%
+[2025-12-28 07:14:05] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 07:16:57] INFO: System health check - CPU 29% Memory 55%
+[2025-12-28 07:19:49] INFO: System health check - CPU 19% Memory 60%
+[2025-12-28 07:22:41] INFO: User 'db_user' logged in from 10.0.0.5.
+[2025-12-28 07:25:33] INFO: System health check - CPU 31% Memory 27%
+[2025-12-28 07:28:25] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 07:31:17] WARN: Low disk space on /var/log (85% full).
+[2025-12-28 07:34:09] INFO: Outbound connection established to 185.220.101.5:443 [Data: 1983MB]
+[2025-12-28 07:37:01] INFO: User 'db_user' logged in from 10.0.0.5.
+[2025-12-28 07:39:53] INFO: System health check - CPU 32% Memory 51%
+[2025-12-28 07:42:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 07:45:37] ERROR: Connection timeout from database_cluster_01.
+[2025-12-28 07:48:29] INFO: System health check - CPU 25% Memory 30%
+[2025-12-28 07:51:21] INFO: System health check - CPU 32% Memory 33%
+[2025-12-28 07:54:13] INFO: System health check - CPU 24% Memory 25%
+[2025-12-28 07:57:05] INFO: System health check - CPU 5% Memory 23%
+[2025-12-28 07:59:57] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 08:02:49] INFO: User 'db_user' logged in from 192.168.1.10.
+[2025-12-28 08:05:41] INFO: System health check - CPU 39% Memory 52%
+[2025-12-28 08:08:33] INFO: User 'admin' logged in from 10.0.0.5.
+[2025-12-28 08:11:25] ERROR: Failed login attempt for user 'jdoe' from 45.33.22.11.
+[2025-12-28 08:14:17] INFO: System health check - CPU 11% Memory 38%
+[2025-12-28 08:17:09] INFO: System health check - CPU 6% Memory 35%
+[2025-12-28 08:20:01] CRITICAL: Unauthorized sudo attempt by 'webapp' on /etc/shadow!
+[2025-12-28 08:22:53] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 08:25:45] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 08:28:37] INFO: System health check - CPU 6% Memory 33%
+[2025-12-28 08:31:29] INFO: User 'webapp' logged in from 192.168.1.50.
+[2025-12-28 08:34:21] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 08:37:13] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 08:40:05] ERROR: Connection timeout from database_cluster_01.
+[2025-12-28 08:42:57] CRITICAL: Unauthorized sudo attempt by 'root' on /etc/shadow!
+[2025-12-28 08:45:49] INFO: Cron job 'cleanup_tmp' completed successfully.
+[2025-12-28 08:48:41] INFO: User 'db_user' logged in from 172.16.254.1.
+[2025-12-28 08:51:33] INFO: User 'admin' logged in from 192.168.1.10.
+[2025-12-28 08:54:25] ERROR: Failed login attempt for user 'jdoe' from 45.33.22.11.
+[2025-12-28 08:57:17] INFO: System health check - CPU 24% Memory 31%
