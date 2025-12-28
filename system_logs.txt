@@ -73,7 +73,7 @@
 [2025-12-27 12:33:13] INFO: Cron job 'cleanup_tmp' completed successfully.
 [2025-12-27 12:36:05] CRITICAL: Unauthorized sudo attempt by 'admin' on /etc/shadow!
 [2025-12-27 12:38:57] INFO: User 'db_user' logged in from 192.168.1.50.
-[2025-12-27 12:41:49] INFO: System health check - CPU 32% Memory 33%
+[2025-12-27 12:41:49] INFO: System health check - CPU 33% Memory 33%
 [2025-12-27 12:44:41] INFO: User 'jdoe' logged in from 10.0.0.5.
 [2025-12-27 12:47:33] INFO: System health check - CPU 23% Memory 59%
 [2025-12-27 12:50:25] INFO: System health check - CPU 15% Memory 33%
